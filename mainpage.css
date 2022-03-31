@@ -1,0 +1,112 @@
+@import url("reset.css");
+
+:root {
+  --clr: #e4f1ff;
+}
+
+section {
+  height: 620px;
+  width: 100%;
+  background-color: #c9e3ff;
+  padding-top: 32px;
+  background-image: url(image/wave.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.map {
+  height: 35em;
+  display: block;
+  margin: 0 auto;
+}
+
+.section_map {
+  position: relative;
+  width: 370px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.section_map ul {
+  display: flex;
+  width: 350px;
+}
+
+.section_map ul li {
+  position: relative;
+  left: 300px;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 0;
+}
+
+.section_map ul li button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.section_map ul li button .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.section_map ul li:hover button .icon {
+  transform: translateY(-25px);
+}
+
+.section_map ul li button .text {
+  position: absolute;
+  color: #000;
+  font-weight: 400;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.section_map ul li:hover button .text {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.section_map ul li .Seoul {
+  position: relative;
+  right: 200px;
+  bottom: 460px;
+}
+
+.section_map ul li .Busan {
+  position: relative;
+  right: 120px;
+  bottom: 240px;
+}
+
+.section_map ul li .Gangneung {
+  position: relative;
+  right: 200px;
+  bottom: 460px;
+}
+
+.section_map ul li .Daejeon {
+  position: relative;
+  right: 390px;
+  bottom: 350px;
+}
+
+.section_map ul li .Jeju {
+  position: relative;
+  right: 540px;
+  bottom: 55px;
+}

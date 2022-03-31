@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>3休2在 여행지도</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="modal_content.css">
+    <!-- Link Modal Function's CSS -->
+    <link rel="stylesheet" href="modalfunction.css">
+
+    <!-- Link Main Page's JS -->
+	<script src="https://kit.fontawesome.com/ab2c52ef93.js" crossorigin="anonymous"></script>
+	<script src="mainpage.js" defer></script>
+
+    <!-- Link Main Page's CSS -->
+	<link rel="stylesheet" type="text/css" href="mainpage.css">
+	<link rel="stylesheet" href="header_footer.css">
+
+  </head>
+
+
+  
+  <body>
+
+        <nav class="navbar">
+            <div class="navbar_logo">
+                <a href="index.html"><img src="image/white_flag.png">
+                3休2在 여행지도</a>
+            </div>
+        
+            <ul class="navbar_menu">
+              <li><a href="subpage_Seoul.html">서울 / Seoul </a></li>
+              <li><a href="subpage_Busan.html">부산 / Busan</a></li>
+              <li><a href="subpage_Gangneung.html">강릉 / Gangneung</a></li>
+              <li><a href="subpage_Daejeon.html">대전 / Daejeon</a></li>
+              <li><a href="subpage_Jeju.html">제주 / Jeju</a></li>
+            </ul>
+        
+            <div class="navbar_toggleBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+                
+            <a href="gridpage.html" class="navbar_gridBtn">
+                <i class="fa-solid fa-grip"></i>
+            </a>
+        </nav>
+	
+    
+    <section>
+    <!-- Map Selection -->
+
+        <div class="section_map">
+            <img class="map" src="image/map.png">
+            <ul>
+                <li class="list">
+                <button id="open1" class="Seoul" target="_blank">
+                    <span class="icon"><img src="image/colored_flag.png"></span>
+                    <span class="text">서울</span>
+                </button>
+                </li>
+                <li class="list">
+                <button id="open2" class="Busan" target="_blank">
+                    <span class="icon"><img src="image/colored_flag.png"></span>
+                    <span class="text">부산</span>
+                </button>
+                </li>
+                <li class="list">
+                <button id="open3" class="Gangneung" target="_blank">
+                    <span class="icon"><img src="image/colored_flag.png"></span>
+                    <span class="text">강릉</span>
+                </button>
+                </li>
+                <li class="list">
+                <button id="open4" class="Daejeon" target="_blank">
+                    <span class="icon"><img src="image/colored_flag.png"></span>
+                    <span class="text">대전</span>
+                </button>
+                </li>
+                <li class="list">
+                <button id="open5" class="Jeju" target="_blank">
+                    <span class="icon"><img src="image/colored_flag.png"></span>
+                    <span class="text">제주</span>
+                </button>         
+                </li>
+            </ul>
+        </div>
+
+    <!-- Modal Window -->
+        <div class="modal_wrapper" id="modal_wrapper1">
+            <!-- Swiper -->
+                <div class="modalwindow">
+                    <div class="modal_title">
+                        <h2>서울</h2>
+                        <button class="close" id="close1">
+                          <span class="material-icons">close</span>
+                        </button>
+                    </div>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                      <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.9751527597764!2d126.98407601527033!3d37.57920277979551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca310cdba0e2b%3A0xe923dd83a93dacb9!2z65-w642YIOuyoOydtOq4gCDrrqTsp4Dsl4Q!5e0!3m2!1sko!2skr!4v1648642565406!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                      </iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                        <li class="items">
+                                          <img src="image/런던.jpg">
+                                        </li>
+                                          <li class="items">
+                                          런던 베이글 뮤지엄<br>
+                                          런던베이글뮤지엄은 북촌에 가면 꼭 들러야 하는 곳 중 한 곳이다.    
+                                          요즘 SNS에서도 베이글 맛집으로 핫한 곳이며 웨이팅이 꽤 있다. 오후에는 인기 있는 메뉴들이 솔드아웃되므로 오픈런은 필수이다. 
+                                          매장은 우드와 벽돌로 꾸며져 있어 런던의 앤티크한 감성을 느낄 수 있다. 
+                                          매장에는 다양한 베이글과 크림치즈들이 있다.
+                                          </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                      <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.98387985467!2d126.98422521527014!3d37.578997279795566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2daaff8c14f%3A0xcdbcbaa9ffc9e59a!2z67aB7LSM7ZWc7Jil66eI7J2E!5e0!3m2!1sko!2skr!4v1648642820805!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                          <li class="items">
+                                            <img src="image/북촌.jpg">
+                                          </li>
+                                          <li class="items">
+                                            북촌<br>
+                                            북촌은 경복궁과 창덕궁 사이에 위치한 조선시대 양반들의 거주지이며 가회동, 계동, 삼청동, 원서동, 재동, 팔판동 일대를 말한다. 북촌 뒤에는 해발 463미터의 북악산과 삼청공원이 위치하고 있으며, 서쪽에는 조선시대 종궁인 경복궁(사적 제 117호)이 있고 동쪽에는 세계문화유산으로 지정된 창덕궁(사적 제 122호)이 있다. 1990년대 이후 급속하게 들어선 다세대가구 주택 때문에 많은 수의 한옥이 사라졌지만, 일부 지역에는 양호한 한옥들이 군집을 이룬 채 많이 남아 있다.북촌 지역은 계동길, 가회로, 삼청동길, 창덕궁길 등이 옛 모습을 그대로 유지하고 있어 중요한 자원으로 평가된다.북촌의 삼청동길 주변에는 많은 갤러리가 늘어서 있고, 화동길과 더불어 각종 먹거리 자원과 특색 있는 카페가 자리잡고 있다. 원서동에는 전통 기능의 보유자 및 예술인들이 모여 살고 있다.최근에는 건축가, 미술가들이 북촌의 역사성 속에 함께 하고자 북촌 내부에 작업실과 사무실 등을 개설하고 있다.
+                                          </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                      <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.453082397261!2d127.0352537152692!3d37.54438777980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca37d51f4f62b%3A0xdd9b9865be0f469a!2z7ISc7Jq47Iiy6rO17JuQ!5e0!3m2!1sko!2skr!4v1648642910263!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="items">
+                                      <ul>
+                                        <li class="items">
+                                          <img src="image/서울숲.jpg">
+                                        </li>
+                                        <li class="items">
+                                          서울 숲<br>
+                                          서울 숲은 문화예술공원, 체험학습원, 생태숲, 습지 생태원 네 가지의 특색 있는 공간들로 구성되어 있으며, 한강과 맞닿아 있어 다양한 문화여가공간을 제공한다. 서울숲에서는 사슴 먹이주기 체험을 할 수 있다. 자판기에서 ‘1000원 짜리 지폐를 넣고 먹이를 뽑으면 된다. 서울숲역 2번, 4번 출구에는 따릉이를 대여할 수도 있다.
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="modal_wrapper" id="modal_wrapper2">
+            <!-- Swiper -->
+                <div class="modalwindow">
+                    <div class="modal_title">
+                        <h2>부산</h2>
+                        <button class="close" id="close2">
+                          <span class="material-icons">close</span>
+                        </button>
+                    </div>
+        
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class = "swiper-slide">
+                                <div class = "contentbox">
+                                    <div class="items">
+                                      <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.848962264691!2d129.1901515507981!3d35.16038738022247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688d274cdcc019%3A0x7db1edcb573ce2a2!2z7LKt7IKs7Y-s!5e0!3m2!1sko!2skr!4v1648643470757!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                                
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                            <li class="items">
+                                              <img src="image/부산_청사포.png">
+                                            </li>
+                                            <li clas="items">
+                                                <p>청사포의 '청사'는 '푸른 모래' 라는 뜻으로, 청사포는 해운대 시가지에서 달맞이 고개 너머 외곽의 좁은 지형 해안가에 있어서 
+                                                <br>대도시가 아닌 고적한 마을 풍경을 유지하고 있다. 과거부터 해산물로 유명해서 조개구이집이 유명하며 부산의 3번째 해상 스카이워크인 전망대가 있다.
+                                                <br>푸른 바다를 형상화한 듯한 특이한 생김새이고, 청사포와 구덕포 사이 돌출된 돌무덤을 들어내고 바다로 쭉 뻗은 해안 절벽 위에 뻗어있다.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "swiper-slide">
+                                <div class = "contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.0486884933634!2d129.0616800504892!3d35.15540646614088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb64c08aeb61%3A0x8a52f6f4014f4ef9!2z7KCE7Y-sIOy5tO2OmOqxsOumrA!5e0!3m2!1sko!2skr!4v1648640704033!5m2!1sko!2skr"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                            <li class="items">
+                                                <img src="image/부산_전포.png">
+                                            </li>
+                                            <li clas="items">
+                                                <p>보통 쥬디스태화를 중심으로 서면 젊음의거리 맞은편, 놀이마루와 전포성당 주변 골목을 일컫는다. 
+                                                <br>이 일대는 원래 하야리아 부대와 전포동 차량 재생창 등에서 나온 자동차·기계 관련 공구와 부품을 파는 가게가 몰려 있어 '공구골목'이라 불렸다.
+                                                <br>인스타 감성의 카페와 맛집이 많아 젊은 사람들이 인스타용 사진을 찍으러 많이 놀러온다.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "swiper-slide">
+                                <div class = "contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.0000835963433!2d129.14994055048936!3d35.15661866607517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568932259872a71%3A0x36ebaae2b13153b5!2z642U67Kg7J20MTAx!5e0!3m2!1sko!2skr!4v1648640517125!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div> 
+                                    <div class="items">
+                                        <ul>
+                                            <li class="items">
+                                                <img src="image/부산_더베이.jpeg">
+                                            </li>
+                                            <li clas="items">
+                                                <p>문화와 예술을 위한 공간, 바다가 주는 흥분을 조금 더 느낄 수 있는 공간, 누구나 머물 수 있는 재미있는 공간이라고 설명할 수 있다.
+                                                <br>더베이는 해운대에 위치한 복합문화예술공간으로, 많은 관광객이 야경명소로 사진을 많이 찍는 곳이다.
+                                                <br>그리고 요트사업이 활발하다. 아름다운 야경을 바다 위에서 시원하게 즐길 수 있어 인기가 많다.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </div>
+    
+        <div class="modal_wrapper" id="modal_wrapper3">
+            <!-- Swiper -->
+                <div class="modalwindow">
+                    <div class="modal_title">
+                        <h2>강릉</h2>
+                        <button class="close" id="close3">
+                            <span class="material-icons">close</span>
+                        </button>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25232.977651112764!2d128.88249042558112!3d37.76373263135749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3561e5e1954f0f5b%3A0x80b7c6519c3d1d46!2z6rCV7JuQ64-EIOqwleumieyLnA!5e0!3m2!1sko!2skr!4v1648642536701!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                        <li class="items">
+                                            <img src="image/강릉1.jpg">
+                                        </li>
+                                        <li class="items">
+                                            강릉시(江陵市)는 강원도 동해안 중부에 있는 시이다. 서울과 비슷한 위도에 위치한 영동 지방 최대 도시이며 서쪽으로 태백산맥이 뻗어 있고, 동쪽으로는 동해가 펼쳐져 있다.
+                                            평창 동계 올림픽이 개최될 당시 개통된 KTX로 인해 강릉까지의 통행이 편해졌고 그로 인해 지금까지도 해마다 관광객은 증가하고 있다. 강릉은 우리나라에서 유일한 커피 산지이며 커피명소이다. 테라로사 커피 공장 본점이 강릉에 있으며 커피를 좋아하는 애호가라면 한번쯤 가볼만하다.
+                                            또한, 강릉에 위치한 테라로사 뮤지엄은 우리가 한 잔의 커피를 마시기까지의 전 과정을 볼 수 있는 박물관이므로 이 곳 역시 들러본다면 여행의 풍미가 한 층 깊어질 것이다.
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="contentbox">
+                                <div class="items">
+                                  <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.6619277467357!2d128.91317001566318!3d37.79796191859764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3561e6bcd38f917b%3A0x58e1ea47ee934b53!2z7JSo66eI7YGsIO2YuO2FlA!5e0!3m2!1sko!2skr!4v1648642705821!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="items">
+                                  <ul>
+                                    <li class="items">
+                                      <img src="image/강릉2.jpg">
+                                    </li>
+                                    <li class="items">
+                                      <p>씨마크 호텔</p>
+                                      <br><p>해변이 바로 보이는 강릉의 유명한 호텔이다. 성수기에는 당연히 오션뷰를 기대할 수가 없을 정도로 인기가 많은 호텔이며 바다와 이어져 있는 것처럼 보이는 수영장 사진이 유행하면서 사람들이 많이 찾는 곳이다.
+                                      로비에 들어서면 파노라마 뷰로 바다가 보이며 테라스로 나가서 직접 강릉의 바닷바람을 느낄 수 있다. 수영장은 가격이 조금 부담되긴 하지만 이 호텔에 들르면 무조건 가야하는 곳으로 꼽힐 만큼 인생사진을 찍기에 아름답다.
+                                      이곳에서 인생 사진을 남겨보는 것도 좋을 것 같다.
+                                      </p>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.9363174644427!2d128.91404041566304!3d37.79153216896749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3561e697ac65fdcb%3A0x138388a312c0f9d0!2z7LSI64u57Iic65GQ67aA66eI7J2EIChDaG9kYW5nIFN1bmR1YnUgVmlsbGFnZSk!5e0!3m2!1sko!2skr!4v1648643070497!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                        <li class="items">
+                                            <img src="image/강릉3.jpg">
+                                        </li>
+                                        <li class="items">
+                                            <p>초당 순두부 마을</p>
+                                            <br><p>씨마크 호텔에서 10분정도 이동하면 나오는 초당 순두부 마을에는 다양한 종류의 순두부 식당들이 있다.
+                                                물론 어딜가나 맛있게 느껴지겠지만 ''농촌 순두부''라는 식당은 유독 얼큰한 국물이 인상적이었다. 기대하지 않고 들어간 곳이었기에 더 맛있었던 기억이 난다.
+                                                <p>
+                                                또한 ''순두부 젤라또'' 가게는 농촌 순두부에서 100m만 걸으면 나오는 유명한 젤라또 맛집이다.
+                                                순두부로 만든 젤라또라는 독특한 메뉴때문인지 관광객들에게 유명하지만 특별한 맛은 아니었다.
+                                                그래도 근처에서 식사를 했다면 들러서 인증샷도 남기도 디저트로 젤라또를 먹는 코스도 나쁘지 않을 것 같다.
+                                                아무래도 역시 익숙한 맛인커피맛와 누텔라맛 그리고 청사과 소르베가 제일 깔끔하게 먹어볼만 하다.
+                                            </p>
+                                            </p>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5784.138070254763!2d128.94401215019082!3d37.77073310081016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3561e7571aef8f6f%3A0x960e61b058e7ab64!2z6rCV66aJIOy5tO2OmOqxsOumrA!5e0!3m2!1sko!2skr!4v1648643860717!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                        <li class="items">
+                                            <img src="image/강릉4.jpg">
+                                        </li>
+                                        <li class="items">
+                                            <p>안목해변 카페거리</p>
+                                            <br><p>
+                                            안목 해변을 등지고 서있을 때 보이는 거리가 안목해변 카페거리이다.
+                                            그 중  '카페 아메리카' 라는 곳은 그 수많은 카페들 중 하나이다.
+                                            이 거리에 있는 어떤 카페를 들어가도 가로막는 것 없이 탁 트인 뷰를 볼 수 있다.
+                                            사실 이렇게 뷰가 좋은 곳은 음식의 맛을 기대하지 않는 편인데 이 곳 역시 의외로 맛이 있고 또 앉은 자리에서 바다 전체를 바라볼 수 있으니 일석이조이다.
+                                            <p>
+                                            </p>
+                                            </p>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="modal_wrapper" id="modal_wrapper4">
+            <!-- Swiper -->
+                <div class="modalwindow">
+                    <div class="modal_title">
+                        <h2>대전</h2>
+                        <button class="close" id="close4">
+                            <span class="material-icons">close</span>
+                        </button>
+                    </div>
+    
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.3761307721234!2d127.38071161730885!3d36.37421752496791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654bae32f20155%3A0x53f15d3671ddf236!2z7Iug7IS46rOE67Cx7ZmU7KCQIOuMgOyghOyLoOyEuOqzhOyVhO2KuOyVpOyCrOydtOyWuOyKpA!5e0!3m2!1sko!2skr!4v1648646807996!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                            <li class="items">
+                                            <img src="image/대전신세계.jpg">
+                                            </li>
+                                            <li class="items">
+                                            <h5>대전신세계 Art&Science</h5>
+                                            <br><p> 대전에 생긴 첫 신세계 백화점이다. 단순 백화점이 아닌 문화복합센터로 다양한 문화시설이 존재한다. 
+                                            지하에는 아쿠아리움이 위치하며, 루프탑에는 하늘공원이 있다. 6층과 7층에 재미있는 놀거리들이 몰려있는데, 
+                                            6층에는 메가박스, 인생네컷 그리고 펀시티 오락실과 넥스페리움 사이언스 뮤지엄이 있다.
+                                            7층에는 레고스토어와 방탈출카페 셜록홈즈가 입점해있으며, 성수미술관이나 신세계 갤러리에서 예술작품을 감상할 수도 있다.
+                                            7층에는 꿀잼도시 대전홍보관이 존재하는데, 귀여운 꿈돌이 굿즈들을 구매할 수 있다.
+                                            </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5065.812211376438!2d127.4248571913323!3d36.32717627523508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356548d8f73d355d%3A0x69e930d902c95eca!2z7ISx7Ius64u5IOuzuOygkA!5e0!3m2!1sko!2skr!4v1648646737194!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                            <li class="items">
+                                                <img src="image/대전성심당.jpg">
+                                            </li>
+                                            <li class="items">
+                                                <h5>성심당</h5>
+                                                <br><p> 성심당은 대전을 대표할 정도로 유명한 빵집이다. 성심당을 찾기 위해서만으로도 대전을 찾는 사람이 있을 정도이다.
+                                                매일 아침 8시부터 저녁 10시까지 영업하며, 금토일은 저녁 11시까지 영업한다.
+                                                맛뿐만 아니라 가격또한 훌륭하여 많은 사람들로 하여금 오랫동안 사랑받고 있는 빵집이다.
+                                                대표적인 빵으로는 튀김소보로, 명란바게트, 부추빵 등이 있다.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.2842084193135!2d127.38258203900088!3d36.37811329999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356549889dce7b39%3A0xef89fc80bfdb167c!2z64yA7KCEIOyXkeyKpO2PrCDqs7ztlZnqs7Xsm5A!5e0!3m2!1sko!2skr!4v1648646860980!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                            <li class="items">
+                                                <img src="image/대전엑스포.jpg">
+                                            </li>
+                                            <li class="items">
+                                                <h5>대전 엑스포 과학공원</h5>
+                                                <br><p> 대전 엑스포 과학공원은 한빛탑으로도 유명하다. 겉으로 보기에는 광활한 공터로 보일 수 있으나,
+                                                밤에 방문하면, 예쁜 조명들과 조형물들 그리고 밤공기와 사람들의 수다 소리가 공원을 꾸민다.
+                                                산책하기에 나쁘지 않으며, 바로 옆으로 대전 신세계 Art&Science가 위치해있어 접근성도 나쁘지 않다.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="modal_wrapper" id="modal_wrapper5">
+            <!-- Swiper -->
+                <div class="modalwindow">
+                    <div class="modal_title">
+                        <h2>제주</h2>
+                        <button class="close" id="close5">
+                            <span class="material-icons">close</span>
+                        </button>
+                    </div>
+    
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13324.4649272113!2d126.230973227848!3d33.39413169263928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350c60eae17a4713%3A0x94cdef2c694e8f5d!2z7ZiR7J6s7ZW067OA!5e0!3m2!1sko!2skr!4v1648632386678!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                        <li class="items">
+                                            <img src="image/제주 1.png">
+                                        </li>
+                                        <li class="items">
+                                            <p>제주하면 바다. 바다하면 제주.</p>
+                                            <br><p>그중에서도 협재 해변은 아름답기로 유명하다.
+                                                바다에서 한참 놀고 해질녘 야자수 듬성듬성 나있는 오솔길을
+                                                걸어보자.
+                                            </p>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.047525591723!2d126.24019177899427!3d33.39592428088356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350c610878df2905%3A0xf0fc45e39ee58dd9!2z67OE64-I67OEIO2YkeyerO2VtOuzgOygkA!5e0!3m2!1sko!2skr!4v1648634333367!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                        <li class="items">
+                                            <img src="image/제주 2.png">
+                                        </li>
+                                        <li class="items">
+                                            <p>흑돼지는 제주도에서 꼭 먹어야하는 별미 중 하나이다.</p>
+                                            <br><p>협재 해변 옆의 별돈별 고깃집은 고기를 워터에이징하여
+                                                다른 고깃집과 차별점을 두었다.
+                                            </p>
+                                            <p>그 덕에 제주도에서 먹어본 흑돼지 중에 가장 맛있는 경험을 할 수 있었다.</p>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.9580938607787!2d126.46074651744382!3d33.5024674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350cfb625bad7389%3A0xe306808cb98e2b1c!2z7Lm07Y6YLCDsp4TsoJXshLEg7KKF7KCQ!5e0!3m2!1sko!2skr!4v1648635454951!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                        <li class="items">
+                                            <img src="image/제주 3.png">
+                                        </li>
+                                        <li class="items">
+                                            <p>카페 진정성은 더 퍼스트 펭귄라는 브랜딩 회사가 기획, 설계한 카페이다.</p>
+                                            <br><p>공간이 섬세히 설계되어 많은 사람들이 찾으며
+                                                전문 바리스타들의  큐레이팅과 함께 핸드 드립 커피를 맛볼 수 있다. 
+                                            </p>                        
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="contentbox">
+                                    <div class="items">
+                                        <iframe class="items map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20976.652705133183!2d126.9189575930139!3d33.43268012120111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350d136a85b37e8b%3A0xc7533a3cb45806e6!2z7Jyg66-866-47Iig6rSA!5e0!3m2!1sko!2skr!4v1648637060164!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                    <div class="items">
+                                        <ul>
+                                        <li class="items">
+                                            <img src="image/제주 4.png">
+                                        </li>
+                                        <li class="items">
+                                            <p>유민 미술관은 건축가 안도 다다오가 설계한 미술관이다.</p>
+                                            <br><p>섭지코지에 위치에 있어 미술관으로 올라가는 길이 아름다우며
+                                                방목해서 키우는 말들의 자연스러운 모습을 볼 수 있다.
+                                            </p>
+                                            <br><p>근처에 아쿠아플래닛 제주 수족관도 있으니 시간이 나면 들려보자.</p>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    <footer>
+		<div class="footer_contents">
+			<a href="#">이용약관</a>
+			<a href="#">영상정보처리기기운영지침</a>
+			<a href="#">개인정보처리방침</a>
+			<a href="#">온라인도우미</a>
+		</div>
+
+		<div class="footer_links">
+			<a href="https://facebook.com">
+				<i class="fa-brands fa-facebook"></i>
+			</a>
+			<a href="https://youtube.com">
+				<i class="fa-brands fa-youtube"></i>
+			</a>
+			<a href="https://instagram.com">
+				<i class="fa-brands fa-instagram"></i>
+			</a>
+			<input type="text" name="">
+		</div>
+
+		<a href="#" class="upper">
+			<i class="fa-solid fa-angle-up"></i>
+		</a>
+	</footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+
+    <script src="modalfunction.js"></script>
+
+  </body>
+</html>
+
+<!-- Map Resizing -->
+
+<script>
+var element = $(this);
+var map;
+
+$('#myMapModal').on('show.bs.modal', function(e) {
+  var element = $(e.relatedTarget);
+  var data = element.data("lat").split(',');
+  var latlng = new google.maps.LatLng(data[0], data[1]);
+  initialize(latlng);
+  $("#lat").html(latlng.lat() + ", " +latlng.lng());
+  google.maps.event.trigger(map, 'resize');
+});
+</script>
